@@ -4,7 +4,9 @@
   "description": "基于hapi的Node.j小程序后端开发实践",
   "main": "app.js",
   "scripts": {
-    "test": "test"
+    "test": "test",
+    "start": "node app.js",
+    "start-watch": "supervisor app.js"
   },
   "keywords": [
     "hapi",
@@ -13,6 +15,20 @@
   "author": "linnchen",
   "license": "ISC",
   "dependencies": {
-    "hapi": "^13.4.0"
+    "env2": "^2.2.2",
+    "hapi": "^16.6.3",
+    "hapi-swagger": "^7.10.0",
+    "inert": "^4.2.1",
+    "joi": "^13.7.0",
+    "mysql2": "^1.6.1",
+    "package": "^1.0.1",
+    "sequelize": "^4.39.0",
+    "vision": "^4.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^5.6.1",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "sequelize-cli": "^4.1.1"
   }
 }
