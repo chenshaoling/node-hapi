@@ -6,7 +6,9 @@
   "scripts": {
     "test": "test",
     "start": "node app.js",
-    "start-watch": "supervisor app.js"
+    "start-watch": "supervisor app.js",
+    "db:creact": "node_modules/.bin/sequelize db:create",
+    "db:creact-prod": "node_modules/.bin/sequelize db:create --env production"
   },
   "keywords": [
     "hapi",
@@ -17,6 +19,7 @@
   "dependencies": {
     "env2": "^2.2.2",
     "hapi": "^16.6.3",
+    "hapi-pagination": "^1.15.0",
     "hapi-swagger": "^7.10.0",
     "inert": "^4.2.1",
     "joi": "^13.7.0",
