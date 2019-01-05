@@ -6,7 +6,12 @@ const configs = require('../config/config.js');
 
 const basename = path.basename(__filename);
 const env = process.env.NODE_ENV || 'development';
-const config = configs[env];
+const config = {
+    ...configs[env],
+    define: {
+        underscored: true
+    }
+};
 const db = {};
 
 let sequelize;
