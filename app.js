@@ -12,7 +12,7 @@ server.connection({
     port: config.port,
     host: config.host
 });
-const init = async () => {
+const init = async() => {
     await server.register([
         // 为系统使用 hapi-swagger
         ...pluginHapiSwagger
